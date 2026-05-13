@@ -414,7 +414,7 @@ Test whether a variable falls inside a mathematical interval. Use `(` / `)` for 
 
 ```c
 // XC                           // C99 output
-x == [(0, 100)]                 x > 0 && x < 100        // open
+x == [(0, 100)]                 x > 0 && x < 100         // open
 x == [[0, 100]]                 x >= 0 && x <= 100       // closed
 x == [[0, 100)]                 x >= 0 && x < 100        // half-open
 x == [(-INF, 0]]                x <= 0                   // left-infinite
